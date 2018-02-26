@@ -1,8 +1,8 @@
 ## Install
 `npm intall `
 
-## compile
+## Compile
 `tsc `
 
-## RUN SERVER
+## Run server
 `node ./dist/server/server.js `
