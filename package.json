@@ -1,0 +1,28 @@
+{
+  "name": "notification-server",
+  "version": "0.0.1",
+  "description": "Notification Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vailancio/notification-server.git"
+  },
+  "author": "vailancio248@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vailancio/notification-server/issues"
+  },
+  "homepage": "https://github.com/vailancio/notification-server#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "ws": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "@types/ws": "^4.0.1",
+    "typescript": "^2.7.2"
+  }
+}
