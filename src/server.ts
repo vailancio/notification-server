@@ -11,7 +11,7 @@ const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
 wss.on('connection', (ws: WebSocket) => {
-    //send immediatly all unsend notifications 
+    // send immediatly all new notifications 
     let notifications =[
      	{
     		type : "TASK_ASSIGNED",
@@ -88,6 +88,12 @@ wss.on('connection', (ws: WebSocket) => {
     }, 3300);
 
 });
+
+wss.on('close', function close() {
+  console.log('disconnected');
+});
+
+wss.on('error', () => console.log('errored'));
 
 //start our server
 server.listen(process.env.PORT || 8999, () => {
